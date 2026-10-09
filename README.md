@@ -31,6 +31,8 @@ A API permite consultar:
 
 ```bash
 npm ci
+npm init -y
+npm install express express-graphql graphql
 ```
 
 2. Inicie o servidor:
