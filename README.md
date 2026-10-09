@@ -30,8 +30,7 @@ A API permite consultar:
 1. Instale as dependências:
 
 ```bash
-npm inity -y
-npm install express express-graphql graphql
+npm ci
 ```
 
 2. Inicie o servidor:
@@ -39,6 +38,19 @@ npm install express express-graphql graphql
 ```bash
 node server.js
 ```
+
+## Testes automatizados
+
+Execute os testes localmente com:
+
+```bash
+npm test
+```
+
+O GitHub Actions executa os testes automaticamente em pushes para `main`,
+`develop`, `feature/*`, `release/*` e `hotfix/*`, e em pull requests destinados
+a `main` ou `develop`. A configuração está em
+`.github/workflows/tests.yml`.
 
 3. A API ficará disponível em:
 
